@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Define o idioma como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Suporte a acentuação -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
+    <title>Tabela de Modelos</title> <!-- Título da aba -->
+
+    <style>
+        /* Estilo geral do corpo */
+        body {
+            width: 500px; /* Largura máxima */
+            margin: auto; /* Centraliza horizontalmente */
+            text-align: center; /* Centraliza o conteúdo */
+            font-family: Arial, Helvetica, sans-serif; /* Fonte */
+        }
+
+        /* Estilo de tabela e suas células */
+        table, td, th {
+            border: solid thin; /* Bordas finas */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Remove espaços entre bordas */
+        }
+
+        thead {
+            background-color: #036; /* Azul escuro */
+            color: #fff; /* Texto branco */
+            text-transform: uppercase; /* Letras maiúsculas */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Título principal da página -->
+    <h1>Modelos de Equipamentos</h1>
+
+    <!-- Início da tabela -->
+    <table>
+        <!-- Cabeçalho da tabela com duas linhas -->
+        <thead>
+            <tr>
+                <th rowspan="2">Modelo</th>
+                <th rowspan="2">Altura</th>
+                <th rowspan="2">Largura</th>
+                <th colspan="2">Acessórios</th>
+            </tr>
+            <tr>
+                <th>USB</th>
+                <th>Wi-Fi</th>
+            </tr>
+        </thead>
+
+        <!-- Corpo da tabela com os dados dos modelos -->
+        <tbody>
+            <tr>
+                <td>XK-7</td>
+                <td>20</td>
+                <td>20</td>
+                <td><img src="ex02/sim.jpg" alt="Sim" width="20"></td>
+                <td><img src="ex02/nao.jpg" alt="Não" width="20"></td>
+            </tr>
+            <tr>
+                <td>WZ8</td>
+                <td>10</td>
+                <td>15</td>
+                <td><img src="ex02/sim.jpg" alt="Sim" width="20"></td>
+                <td><img src="ex02/nao.jpg" alt="Não" width="20"></td>
+            </tr>
+            <tr>
+                <td>X15</td>
+                <td>30</td>
+                <td>30</td>
+                <td><img src="ex02/sim.jpg" alt="Sim" width="20"></td>
+                <td><img src="ex02/sim.jpg" alt="Sim" width="20"></td>
+            </tr>
+        </tbody>
+
+        <!-- Rodapé com informação adicional -->
+        <tfoot>
+            <tr>
+                <td colspan="5">Dados técnicos do equipamento</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
